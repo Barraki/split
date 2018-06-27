@@ -244,20 +244,26 @@ h3, .h3 {
    3. 404 STYLES 
 ================================ */
 
+.fuul {
+	overflow-y: hidden;
+	height: 100vh;
+}
+
 .error-content p {
 	margin: 0 0 40px;
 	line-height: 30px;
 }
 .error-content  {
 	background-image: url(../img/404.png);
-	background-color: #111;
+	background-color: #0a0b12;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 115vh;
-	background-position: -1px 0;
-}
+	min-height: 800px;
+	max-height: 100vh;
+	background-position: -1px -100px;
+} 
 .error_descr {
-	margin-top: 45%;
+	margin-top: 20%;
 	margin-left: 160px;
 }
 
@@ -298,6 +304,14 @@ h3, .h3 {
 /* =============================
    4. CONTACT STYLES
 ================================ */
+
+.mobile-logo {
+	display: none;
+}
+
+.mobile-logo{
+	color: #ffffff;
+}
 
 .contact .cinfo p {
 	margin: 0 0 27px;
@@ -2047,8 +2061,14 @@ header .col-md-8 {
 
 header .navbar-brand {
 	margin: 0;
-	padding: 37px 0;
 	height: auto;
+}
+
+.navbar-brand {
+	padding: 0 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 header .cart-header {
@@ -2502,6 +2522,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	font-family: 'Cormorant Infant', sans-serif;
 	color: #fff;
 	font-size: 50px;
+	font-weight: 500;
 }
 
 .newsletter-wrap p {
@@ -2559,7 +2580,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 .home-shop {
 	background-image: url(../img/bg-3.png);
 	background-repeat: no-repeat;
-	height: 800px;
+	height: 700px;
 	background-size: cover;
 	background-position: center 50px;
 }
@@ -2892,7 +2913,7 @@ p.date {
 .log-info {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between
+	justify-content: flex-end
 }
 
 .location i{
@@ -3633,7 +3654,7 @@ p.date {
 
 .timeline:before {
 	top: 0;
-	bottom: 150px;
+	bottom: 400px;
 	position: absolute;
 	content: "";
 	width: 2px;
@@ -3898,7 +3919,7 @@ p.date {
 .clients {
 	background-image: url(../img/bg_4.png);
 	background-size: contain;
-	height: 800px;
+	height: 830px;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 }
@@ -5800,7 +5821,6 @@ header .navbar-default .cart-table ul {
 .header4 .navbar-default .navbar-nav > li > a:hover {
 	border-bottom: 2px solid transparent;
 	color: #fcfcfc !important;
-	font-weight: 700;
 	transition: all 0.4s ease
 }
 
@@ -5809,8 +5829,7 @@ header .navbar-default .cart-table ul {
 }
 
 .header4 .container > .row > .col-md-9 {
-	padding: 28px 15px 8px;
-	position: static;
+
 }
 
 .header4 .navbar-nav {
@@ -5824,8 +5843,10 @@ header .navbar-default .cart-table ul {
 }
 
 .header4 .container > .row > .col-md-3 {
-	height: 121px;
+	height: 100px;
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 .header4 .navbar-brand {
@@ -5907,7 +5928,7 @@ header .navbar-default .cart-table ul {
 
 .header4.header5 {
 	background: #65594d;
-	height: 139px;
+	height: 100px;
 }
 
 .header5.homepage-overlay {
@@ -5915,6 +5936,12 @@ header .navbar-default .cart-table ul {
 	background-size: cover;
 	position: absolute;
 	color: #e6ddd0 !important;	
+	transition: all 0.4s ease
+}
+
+.timeline h3 {
+	font-family: 'Tahoma';
+	font-weight: 700;
 }
 
 .header5.homepage-overlay .header-top i {
@@ -5927,10 +5954,12 @@ header .navbar-default .cart-table ul {
 
 .header-top {
 	border-bottom: 1px solid rgba(255,255,255,0.2);
-	display: table;
 	float: right;
 	width: 85%;
-	margin-top: 0px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	height: 40px;
 }
 
 .header-top i {
@@ -5939,8 +5968,8 @@ header .navbar-default .cart-table ul {
 
 .header-top p {
 	color: #c8b69d;
-	margin-top: -5px;
 	margin-right: 40px;
+	margin-bottom: 0;
 }
 
 .header-top p a {
@@ -5964,7 +5993,7 @@ header .navbar-default .cart-table ul {
 }
 
 .header4.header5 .dropdown-menu.dropdown-menu-v3 {
-	margin-top: -34px !important;
+	margin-top: -40px !important;
 }
 
 .cart-header2 {
@@ -6440,7 +6469,7 @@ header .navbar-default .cart-table ul {
 	}
 
 	.header4.header5 .navbar-toggle {
-		top: 76px;
+		top: 20px;
 	}
 
 	.header4 .navbar-collapse {
@@ -6451,8 +6480,11 @@ header .navbar-default .cart-table ul {
 
 	.header4.header5 .navbar-collapse {
 		max-height: 55vh;
-		top: 136px;
+		top: 100px;
 		background: #fff;
+	}
+	.header4 .navbar-nav {
+		float: none
 	}
 
 	.header4 .navbar-default .navbar-nav > li > a:focus, .header4 .navbar-default .navbar-nav > li > a {
@@ -6882,8 +6914,32 @@ header .navbar-default .cart-table ul {
 
 @media only screen and (min-width: 250px) and (max-width: 540px) {
 
+	.homepage-overlay {
+		height: 50px;
+	}
+	.error_descr {
+		position: absolute;
+		margin-top: 200px;
+		margin-left: 0;
+	}
+
+	.error-content {
+		background-position: center 150px;
+	}
+
+	.mobile-logo {
+		display: block;
+	}
+	.header-top {
+		display: none;
+	}
+
+	.destop-logo {
+		display: none !important;
+	}
+
 	.choosen {
-		height: auto;
+		height: 850px;
 	}
 
 	.section-head h3 {
@@ -6899,13 +6955,13 @@ header .navbar-default .cart-table ul {
 	font-size: 25px;
 }
 .clients {
-	height: auto;
+	height: 600px;
 }
 ul.menu > li > a {
 	font-size: 12px;
 }
 .timeline:before {
-	bottom: 200px;
+	bottom: 1100px;
 }
 
 	.single-content .single-info .condolence-item .meta span {
