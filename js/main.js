@@ -382,3 +382,18 @@ $(document).mouseup(function (e) {
 			container.hide();
 	}
 });
+
+$('.js-example-basic-multiple').select2({
+   search: false,
+});
+
+$('.js-example-basic-multiple-1').select1({
+	search: false,
+});
+
+$('.js-example-basic-multiple-2').select1({
+	search: false,
+});
+
+
+
