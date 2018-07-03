@@ -387,13 +387,14 @@ $('.js-example-basic-multiple').select2({
    search: false,
 });
 
-$('.js-example-basic-multiple-1').select1({
-	search: false,
-});
 
-$('.js-example-basic-multiple-2').select1({
-	search: false,
-});
+// $(document).ready(function(){
+// 	$(".shop-sort a").click(function (){
+// 	if (!$(this).hasClass(".active")) {
+// 		$(".shop-sort a.active").removeClass("active")
+// 	}
 
-
+		
+// 	}) 
+// });
 
