@@ -243,10 +243,6 @@ h3, .h3 {
    3. 404 STYLES 
 ================================ */
 
-.fuul {
-	overflow-y: hidden;
-	height: 100vh;
-}
 
 .error-content p {
 	margin: 0 0 40px;
@@ -257,9 +253,8 @@ h3, .h3 {
 	background-color: #0a0b12;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 800px;
-	max-height: 100vh;
-	background-position: -1px -100px;
+	height: 100vh;
+
 } 
 .error_descr {
 	margin-top: 20%;
@@ -1570,6 +1565,14 @@ footer .footer-bottom i {
 .amenities-ul li {
 	margin-bottom: 28px;
 }
+#list-item {
+	display: none;
+	transition: all 0.3s ease
+}
+#rectangle {
+
+	transition: all 0.3s ease
+}
 
 .amenities-ul li h4 {
 	font-family: 'Oxygen', sans-serif;
@@ -2471,7 +2474,7 @@ footer .footer-quote .slick-dots li.slick-active button {
 	background-image: url(../img/bg-3.png);
 	background-repeat: no-repeat;
 	height: 700px;
-	background-size: cover;
+	background-size: contain;
 	background-position: center 50px;
 }
 
@@ -6230,7 +6233,9 @@ text-decoration: line-through
 .header4 .navbar-default .navbar-nav > li > a::after {
 	display: none;
 }
-
+.padding-bottom-200 {
+	padding-bottom: 200px !important;
+}
 
 
 .header4 .navbar-nav {
@@ -6435,6 +6440,19 @@ text-decoration: line-through
 /* =============================
    21. RESPONSIVENESS 
 ================================ */
+@media only screen and (min-width: 1500px) and (max-width: 4500px) {
+	.clients {
+		height: 1100px;
+	}
+
+	.error_descr {
+		margin-top: 60%;
+    margin-left: 250px;
+	}
+
+}
+
+
 
 @media only screen and (min-width: 1151px) and (max-width: 4500px) {
 	.navbar-default .navbar-nav > li > a:after {
@@ -7321,6 +7339,22 @@ text-decoration: line-through
 }
 
 @media only screen and (min-width: 250px) and (max-width: 540px) {
+	.company_map {
+		display: none;
+	}
+	.shop-sort-wrap {
+		display: none;
+	}
+	.bg_angel {
+		display: none;
+	}
+
+	.new-company {
+		display: none;
+	}
+	.section-head p {
+		display: none;
+	}
 
 	.homepage-overlay {
 		height: 50px;
@@ -7347,7 +7381,7 @@ text-decoration: line-through
 	}
 
 	.choosen {
-		height: 850px;
+		height: 300px;
 	}
 
 	.section-head h3 {
@@ -7355,15 +7389,21 @@ text-decoration: line-through
 	}
 
 	.services {
-    background-position: center 350px;
-    height: 500px;
+		background-size: contain;
+    height: 350px;
+}
+
+.home-shop {
+	height: 350px;
+	background-position: center bottom;
+	
 }
 
 .newsletter-wrap h2 {
 	font-size: 25px;
 }
 .clients {
-	height: 600px;
+	height: 350px;
 }
 ul.menu > li > a {
 	font-size: 12px;
