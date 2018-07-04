@@ -216,6 +216,12 @@ $(document).ready(function () {
 		});
 	}
 
+
+	$('.shop-carousel-wrap').slickLightbox({
+		itemSelector        : 'a',
+		navigateByKeyboard  : true
+	});
+
 	// ACCORDION
 	function toggleChevron(e) {
 		$(e.target)
@@ -377,6 +383,26 @@ $(document).ready(function () {
 	})
 });
 
+
+$(window).ready(function(){
+	$("a.List").click(function (){
+		$("a.List").addClass("active");
+		$(".Rectangle").removeClass("active");
+		$("#list-item").css("display", "block");
+		$("#rectangle").css("display", "none");
+
+
+	});
+
+	$("a.Rectangle").click(function (){
+		$("a.Rectangle").addClass("active")
+		$(".List").removeClass("active")
+		$("#list-item").css("display", "none");
+		$("#rectangle").css("display", "block");
+
+	});
+});
+
 $(document).mouseup(function (e) {
 	var container = $("ul.submenu");
 	if (container.has(e.target).length === 0) {
@@ -389,22 +415,3 @@ $('.js-example-basic-multiple').select2({
 });
 
 
-
-$(document).ready(function(){
-	$(".List").click(function (){
-		$(".List").addClass("active");
-		$(".Rectangle").removeClass("active");
-		$("#list-item").css("display", "block");
-		$("#rectangle").css("display", "none");
-
-
-	});
-
-	$(".Rectangle").click(function (){
-		$(".Rectangle").addClass("active")
-		$(".List").removeClass("active")
-		$("#list-item").css("display", "none");
-		$("#rectangle").css("display", "block");
-
-	});
-});
