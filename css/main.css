@@ -1247,6 +1247,13 @@ footer .footer-bottom i {
    12. FACILITIES
 ================================ */
 
+.facilities {
+	border: 1px solid #f2f2f2;
+}
+.padding-0 {
+	padding: 0 !important;
+}
+
 .facilities aside .links a {
 	line-height: 58px;
 	background-color: #f4f4f4;
@@ -1283,6 +1290,8 @@ footer .footer-bottom i {
 	margin-bottom: 25px;
 	border-bottom: 1px solid #f2f2f2;
 	display: inline-block;
+	padding: 40px;
+	padding-left: 30px;
 }
 
 .facilities .team-info .col-md-3 {
@@ -1295,8 +1304,8 @@ footer .footer-bottom i {
 
 .facilities .team-info .social {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 10%;
+	right: 5%;
 	z-index: 44;
 }
 
@@ -1307,7 +1316,7 @@ footer .footer-bottom i {
 	line-height: 23px;
 	text-align: center;
 	color: #fff;
-	background: #e6ddd0;
+	background: #65594d;
 	display: inline-block;
 	border-radius: 50%;
 	font-style: 13px;
@@ -1328,14 +1337,27 @@ footer .footer-bottom i {
 	font-size: 18px;
 	display: block;
 	margin-bottom: 12px;
+	color: #65594d;
+font-family: "Cormorant Infant";
+font-size: 18px;
+font-weight: 900;
 }
+
 
 .facilities .team-info p i {
 	font-size: 15px;
 	margin-right: 5px;
-	color: #e6ddd0;
+	color: #65594d;
 	position: relative;
 	top: 0.5px;
+}
+
+.facilities .team-info p {
+	color: #65594d;
+font-family: Tahoma;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
 }
 
 .no-border {
@@ -1505,13 +1527,8 @@ footer .footer-bottom i {
 	transition: 0.4s;
 }
 
-.location-info form .row {
-	margin: 0 -10px;
-}
 
-.location-info form .row .col-md-6 {
-	padding: 0 10px;
-}
+
 
 .location-info form button {
 	min-width: 170px;
@@ -1524,6 +1541,18 @@ footer .footer-bottom i {
 	float: left;
 	position: relative;
 	top: 15px;
+}
+
+.location-info label {
+	color: #65594d;
+font-family: Tahoma;
+font-size: 15px;
+font-weight: 400;
+line-height: 40px;
+}
+
+.location-info .btn-default {
+	float: right
 }
 
 .location-info form .cbox-other + input {
@@ -2547,8 +2576,18 @@ footer .footer-quote .slick-dots li.slick-active button {
    19. BLOG
 ================================ */
 
+.slick-list {
+	border: 1px solid #e6ddd0;
+	transition: all 0.3s ease;
+	cursor: pointer;	
+}
 
-.blog-content {
+.slick-list:hover {
+	border: 2px solid #e6ddd0
+}
+
+
+.blog-content, .shop-single {
 	background-image: url(../img/bg-blog-angel.png);
 background-repeat: no-repeat;
 background-position: center bottom;
@@ -4475,7 +4514,7 @@ aside .cbox li {
 
 .page_head {
 	padding: 20px 0;
-	border-bottom: 1px solid #d9d9;
+	border-bottom: 1px solid #f6f6f6;
 }
 
 .h-0 {
@@ -5633,6 +5672,12 @@ header .navbar-default .cart-table ul {
 	width: 100%;
 	margin-bottom: -1px;
 	cursor: pointer;
+	border: 1px solid #e4e4e4;
+}
+
+.shop-carousel .slick-dots li a:hover {
+	box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.19);
+	
 }
 
 .shop-carousel-wrap {
@@ -5692,7 +5737,33 @@ margin-top: 30px;
 .product-info {
 	padding-bottom: 15px;
 	border-bottom: 2px solid #f6f6f6;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between
+}
+
+.product-info .button_shop {
+	display: flex;
+	flex-direction: row;
+	color: #c0b4a2;
+font-family: Tahoma;
+font-size: 14px;
+font-weight: 400;
+}
+
+.product-info .rating {
+	color: #65594d;
+font-family: Tahoma;
+font-size: 14px;
+font-weight: 400
+}
+.product-info .button_shop i {
+	color: #65594d;
+}
+.like-button {
+	margin-left: 10px;
 }
 
 .product-info span {
@@ -5707,6 +5778,13 @@ margin-top: 30px;
 	line-height: 27px;
 	padding: 0 13px;
 	border-radius: 5px;
+}
+
+.shop-item p {
+	color: #65594d;
+font-family: Tahoma;
+font-size: 14px;
+font-weight: 400;
 }
 
 .shop-single-info h4 {
@@ -5737,15 +5815,27 @@ margin-top: 30px;
 }
 
 .product-single-price {
-	font-size: 50px;
-	margin: 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between ;
+	margin-bottom: 30px;
 }
 
-.product-single-price span {
-	font-size: 24px;
-	color: #c7c7c7;
+.product-single-price .price {
+	font-size: 50px;
+	margin: 30px 0;
+	color: #65594d;
+	font-family: Tahoma;
+	font-size: 50px;
+	font-weight: 400;
+}
+
+.product-single-price .price span {
 	margin-left: 1px;
 	text-decoration: line-through;
+	color: #c0b4a2;
+font-size: 24px;
+font-weight: 400;
 }
 
 .ps-options {
@@ -5792,7 +5882,6 @@ margin-top: 30px;
 }
 
 .shop-reviews .tab-pane {
-	border: 1px solid #eaeaea;
 	padding: 40px;
 	width: 100%;
 }
@@ -5805,8 +5894,10 @@ margin-top: 30px;
 	padding: 0;
 	width: 100%;
 	background: transparent !important;
-	font-size: 16px;
-	color: #565656;
+	color: #65594d;
+font-family: 'Tahoma';
+font-size: 16px;
+font-weight: 400;
 }
 
 .shop-reviews .nav-tabs > li > a i {
@@ -5819,16 +5910,18 @@ margin-top: 30px;
 	opacity: 1;
 }
 
-.shop-reviews .nav-tabs > li.active > a {
-	color: #bdae97;
+.shop-reviews .nav-tabs > li.active {
+	background-color: #e6ddd0;
 }
 
 .shop-reviews .nav > li {
 	position: relative;
 	float: none;
 	width: 100%;
-	background: transparent;
+	background-color: #f3eee8;
 	border-bottom: 2px solid #f7f7f7;
+	padding: 0 20px 0 40px;
+	margin-bottom: 10px;
 }
 
 .shop-sort-wrap {
@@ -5840,8 +5933,62 @@ margin-top: 30px;
 	margin-bottom: 25px;
 }
 
+.contact-tab .img-comp {
+	width: 220px;
+	height: 96px;
+} 
+.contact-tab .rating {
+	color: #65594d;
+font-family: Tahoma;
+font-size: 16px;
+font-weight: 900;
+}
+.contact-tab li {
+	color: #65594d;
+font-family: Tahoma;
+font-size: 16px;
+font-weight: 400;
+}
+
+.contact-tab .buy {
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.contact-tab li i {
+	width: 30px;
+	font-size: 20px;
+}
+
 .shop-sort {
 	float: right;
+}
+
+.print_views, .print_views a  {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	color: #cdc3b5;
+font-family: Tahoma;
+font-size: 15px;
+font-weight: 400;
+}
+
+.print_views {
+	border-top: 1px solid #f3f3f3
+
+}
+
+.analitycs {
+	border: none !important
+}
+
+.analitycs li {
+	color: #cdc3b5;
+font-family: Tahoma;
+font-size: 15px;
+font-weight: 400;
 }
 
 .shop-sort a {
@@ -5897,7 +6044,7 @@ font-weight: 400;
 line-height: 24px;
 }
 
-.map-block .post-link {
+.post-link {
 	color: #605449;
 	font-size: 14px;
 	font-weight: 400;
@@ -5915,8 +6062,6 @@ line-height: 24px;
 }
 
 .buy {
-width: 173px;
-height: 47px;
 background-color: #e6ddd0;
 color: #65594d;
 font-family: Tahoma;
@@ -5925,6 +6070,12 @@ font-weight: 400;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+.buy-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between
 }
 
 

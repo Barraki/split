@@ -282,7 +282,7 @@ $(document).ready(function () {
 function resizeScrenn() {
 	if ($(window).width() >= 576) {
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 1) {
+			if ($(this).scrollTop() > 30) {
 				$('.homepage-overlay').addClass("fixed-menu");
 				$('.header-top').css("display", "none");
 				$('.homepage-overlay').css("height", "60px");
