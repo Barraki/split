@@ -217,11 +217,6 @@ $(document).ready(function () {
 	}
 
 
-	$('.shop-carousel-wrap').slickLightbox({
-		itemSelector        : 'a',
-		navigateByKeyboard  : true
-	});
-
 	// ACCORDION
 	function toggleChevron(e) {
 		$(e.target)
