@@ -7050,9 +7050,8 @@ text-decoration: line-through
 		position: absolute;
 		background: transparent !important;
 		z-index: 777;
-		width: 100%;
+		width: 50px;
 		height: 54px;
-		left: 0;
 		right: 0;
 		padding: 0 25px;
 		top: 100px;
@@ -7548,18 +7547,71 @@ text-decoration: line-through
 	}
 
 	.section-head h3 {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
+	.section-head {
+		margin-bottom: 10px !important	;
+	}
+
+	.comments-button {
+		display: none;
+	}
+
+	.shop-carousel .item img {
+		height: 197px;
+	}
+
+	.carousel-item {
+		height: 300px;
+	}
+
+	.img-company img {
+		width: 100px;
+	}
+
+	.product-single-price .price {
+		font-size: 40px;
+	}
+	.post-link {
+		display: none;
+	}
+
+	.buy-button a {
+		margin: 0 auto
+	}
+
+	.google-advetisment {
+		display: none;
+	}
+.analitycs {
+	display: none;
+}
 	.services {
 		background-size: contain;
     height: 350px;
+}
+
+.print_views {
+	display: none;
+}
+
+.shop-single {
+	padding-bottom: 50px !important;
+}
+
+.shop-single {
+	background-size: contain;
 }
 
 .home-shop {
 	height: 350px;
 	background-position: center bottom;
 	
+}
+
+.list-inline>li {
+	font-size: 11px;
 }
 
 .newsletter-wrap h2 {
