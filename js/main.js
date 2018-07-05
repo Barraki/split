@@ -383,8 +383,9 @@ $(window).ready(function(){
 	$("a.List").click(function (){
 		$("a.List").addClass("active");
 		$(".Rectangle").removeClass("active");
-		$("#list-item").css("display", "block");
-		$("#rectangle").css("display", "none");
+		$("#rectangle").fadeOut( 500 );
+		$("#list-item").fadeIn( 500 );
+		
 
 
 	});
@@ -392,8 +393,8 @@ $(window).ready(function(){
 	$("a.Rectangle").click(function (){
 		$("a.Rectangle").addClass("active")
 		$(".List").removeClass("active")
-		$("#list-item").css("display", "none");
-		$("#rectangle").css("display", "block");
+		$("#list-item").fadeOut( 500 );
+	  $("#rectangle").fadeIn( 500 );
 
 	});
 });

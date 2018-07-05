@@ -1041,6 +1041,8 @@ footer .footer-bottom i {
 	color: #65594d;
 	font-size: 24px;
 	font-weight: 800;
+	height: 48px;
+	word-wrap: break-word;
 }
 
 .send-flowers span {
@@ -1604,11 +1606,6 @@ line-height: 40px;
 }
 #list-item {
 	display: none;
-	transition: all 0.3s ease
-}
-#rectangle {
-
-	transition: all 0.3s ease
 }
 
 .amenities-ul li h4 {
@@ -2563,7 +2560,18 @@ footer .footer-quote .slick-dots li.slick-active button {
 .ratings {
 	padding: 0 7px;
 	display: inline-block;
+
 }
+
+.send-flowers .rating {
+	opacity: 0;
+	transition: all 0.3s ease
+}
+
+.shadow-hover:hover .send-flowers .rating {
+	opacity: 1;
+}
+
 
 .ratings span {
 	font-size: 13px;
@@ -2843,6 +2851,13 @@ left: 19%;
 	margin-bottom: 5px;
 	z-index: 900;
 
+}
+
+.desc-item {
+	height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .company_map .mab-box .category_company {
 	font-size: 12px;
@@ -6024,7 +6039,6 @@ font-weight: 400;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 25px;
 	margin-bottom: 15px;
 }
 
@@ -6854,6 +6868,7 @@ text-decoration: line-through
 
 	.send-flowers h4 {
 		margin: 25px 0 15px;
+		height: 48px;
 	}
 
 
