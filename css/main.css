@@ -7566,6 +7566,10 @@ text-decoration: line-through
 		height: 300px;
 	}
 
+	.list-inline>li {
+		padding: 0;
+	}
+
 	.img-company img {
 		width: 100px;
 	}
