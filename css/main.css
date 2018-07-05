@@ -2832,6 +2832,10 @@ left: 19%;
 	position: relative;
 
 }
+
+.position.dot {
+	width: 60px !important;
+}
 .company_map .mab-box .tittle_company {
 	color: #65594d;
 	font-size: 15px;
